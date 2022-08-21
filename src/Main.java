@@ -44,16 +44,17 @@ public class Main {
         System.out.println("Вес завтрака " + weightBreakfast + " кг");
 
         // Задача 4
-        short weightLose = 7;
-        double weightLoseinDay1 = 0.250;
-        double allDay1 = weightLose / weightLoseinDay1;
+        int weightLoseKg = 7;
+        int gramsInKg = 1000;
+        int weightLoseGrams = weightLoseKg * gramsInKg;
+        int weightLoseinDay1 = 250;
+        int allDay1 = weightLoseGrams / weightLoseinDay1;
         System.out.println("Пройдет " + allDay1 + " дней");
-        double weightLoseInDay2 = 0.5;
-        double allDay2 = weightLose / weightLoseInDay2;
+        int weightLoseInDay2 = 500;
+        int allDay2 = weightLoseGrams / weightLoseInDay2;
         System.out.println("Пройдет " + allDay2 + " дней");
-        double weightLoseAverageInDay = (weightLoseinDay1 + weightLoseInDay2) / 2;
-        double weightLoseAverage = weightLose / weightLoseAverageInDay;
-        System.out.println("Потребуется в среднем " + weightLoseAverage + " дней");
+        int weightLoseAverageInDay = (allDay1 + allDay2) / 2;
+        System.out.println("Потребуется в среднем " + weightLoseAverageInDay + " дней");
 
         // Задача 5
         int salaryMasha = 67760;
